@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saulo Sebastián Lira Roacho | Software Development Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Source+Serif+4:wght@400;600&display=swap">
+<style>
+:root{--bg:#f6f3ec;--card:#fffdf8;--ink:#1d2320;--mute:#5b655f;--acc:#0b6e5b;--acc2:#b4560f;--line:#d9d3c4;
+--mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;--serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101613;--card:#18211d;--ink:#e8ece6;--mute:#9aa7a0;--acc:#4fd1b0;--acc2:#f0a05a;--line:#2a3730;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101613;--card:#18211d;--ink:#e8ece6;--mute:#9aa7a0;--acc:#4fd1b0;--acc2:#f0a05a;--line:#2a3730;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--serif)}
+a{color:var(--acc)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:4px;align-items:center;padding:10px 20px;flex-wrap:wrap}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+nav b{font:700 14px var(--mono);margin-right:auto}
+nav a{font:500 13px var(--mono);text-decoration:none;color:var(--ink);padding:6px 10px;border-radius:4px}
+nav a:hover{background:var(--line)}
+nav a.cv{background:var(--acc);color:var(--bg)}
+main{max-width:920px;margin:0 auto;padding:0 20px 60px}
+section{padding:56px 0 8px}
+h1,h2,h3{font-family:var(--mono);line-height:1.2;margin:0 0 14px}
+h1{font-size:clamp(30px,6vw,52px)}
+h2{font-size:24px;border-bottom:2px solid var(--ink);padding-bottom:8px;margin-bottom:22px}
+h2 span{color:var(--acc)}
+h3{font-size:17px}
+.hero{padding-top:64px}
+.tag{font:500 13px var(--mono);color:var(--acc2)}
+.lead{font-size:20px;max-width:680px}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.btn{font:700 13px var(--mono);padding:10px 16px;border:2px solid var(--ink);color:var(--ink);text-decoration:none;border-radius:4px}
+.btn.p{background:var(--acc);border-color:var(--acc);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:18px 20px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.chips i{font:500 12px var(--mono);font-style:normal;border:1px solid var(--acc);color:var(--acc);padding:2px 8px;border-radius:99px}
+dl{margin:10px 0 0}dt{font:700 12px var(--mono);color:var(--acc2);margin-top:10px;text-transform:uppercase}dd{margin:2px 0 0}
+ul{padding-left:20px;margin:6px 0}
+.cv-box{background:var(--card);border:1px solid var(--line);padding:28px 30px;border-radius:6px}
+.cv-box h2{font-size:19px;margin:24px 0 10px;border-bottom:1px solid var(--line)}
+.cv-box h1{font-size:28px;margin-bottom:4px}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.row b{font-family:var(--mono);font-size:14px}.row span{color:var(--mute);font-size:15px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:14px}
+th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+th{background:var(--card);font-family:var(--mono);font-size:12px}
+footer{text-align:center;color:var(--mute);font:13px var(--mono);padding:30px 20px}
+@media print{nav,.noprint{display:none}}
+</style>
+</head>
+<body>
+<nav>
+<b>&gt; S.Lira</b>
+<a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#cover">Cover Letter</a><a class="cv" href="#resume">Resume</a>
+</nav>
+<main>
+
+<section class="hero" id="about">
+<div class="tag">// Software Development Student · Durango, Mexico</div>
+<h1>Saulo Sebastián<br>Lira Roacho</h1>
+<p class="lead">I am a Software Development student at the Universidad Tecnológica de Durango. I have built small applications, designed simple databases and practiced clean, well-documented code. I am looking for a professional internship where I can grow as a developer.</p>
+<div class="btns"><a class="btn p" href="#resume">View my Resume</a><a class="btn" href="#projects">See my projects</a><a class="btn" href="mailto:liraroachosaulosebastian@gmail.com">Contact me</a></div>
+<div class="grid" style="margin-top:34px">
+<div class="card"><h3>Focus</h3>Programming, web development and databases.</div>
+<div class="card"><h3>Learning</h3>Python, Git &amp; GitHub, web fundamentals and algorithms.</div>
+<div class="card"><h3>Goal</h3>Professional internship in software development.</div>
+</div>
+</section>
+
+<section id="projects">
+<h2><span>01.</span> Software Projects</h2>
+<div class="grid">
+
+<article class="card">
+<h3>Restaurant Management System</h3>
+<div class="chips"><i>Python</i><i>MySQL</i><i>CSV export</i><i>Modular design</i></div>
+<dl>
+<dt>Situation</dt><dd>A restaurant needed to handle table reservations, orders and daily sales without paper records.</dd>
+<dt>Task</dt><dd>Build a console application with separate client and administrator areas, connected to a database.</dd>
+<dt>Action</dt><dd>I developed a modular Python program (menu, orders and reservations modules) connected to MySQL with parameterized queries. I implemented a confirmation code for reservations, order management (add, remove, change quantity, search dishes), a password-protected admin menu, and CSV exports for table tickets and daily sales reports.</dd>
+<dt>Result</dt><dd>I have delivered a complete working system that covers the full flow from reservation to final bill.</dd>
+<dt>My role</dt><dd>Developer (Python and database).</dd>
+</dl>
+</article>
+
+<article class="card">
+<h3>Cars CRUD Desktop App</h3>
+<div class="chips"><i>Python</i><i>Tkinter</i><i>MySQL</i><i>OOP</i><i>Git &amp; GitHub</i></div>
+<dl>
+<dt>Situation</dt><dd>Vehicle data had to be stored and managed in a database through a friendly interface.</dd>
+<dt>Task</dt><dd>Create a desktop application to insert, view, update and delete cars.</dd>
+<dt>Action</dt><dd>I designed a <code>Cars</code> class with object-oriented programming and built a Tkinter graphical interface connected to MySQL. In later versions, I added form reset buttons, a search step before editing or deleting, and a confirmation message before deleting a record. I managed each version with Git branches and pull requests.</dd>
+<dt>Result</dt><dd>I have released three versions of the app, each improving usability and data safety.</dd>
+<dt>My role</dt><dd>Developer (individual project).</dd>
+</dl>
+</article>
+
+<article class="card">
+<h3>School Management System</h3>
+<div class="chips"><i>Python</i><i>Tkinter</i><i>MySQL</i><i>OOP</i></div>
+<dl>
+<dt>Situation</dt><dd>Student names and grades needed to be stored and managed in an organized way.</dd>
+<dt>Task</dt><dd>Build a desktop application with full CRUD operations on a student database.</dd>
+<dt>Action</dt><dd>I developed a Tkinter interface connected to MySQL and modeled students with an object-oriented <code>Students</code> class. I implemented input validation with warning messages and a confirmation dialog before deleting a record.</dd>
+<dt>Result</dt><dd>I have built a reliable system that registers, updates, searches and removes students safely.</dd>
+<dt>My role</dt><dd>Developer (individual project).</dd>
+</dl>
+</article>
+
+</div>
+</section>
+
+<section id="skills">
+<h2><span>02.</span> Skills</h2>
+<div class="grid">
+<div class="card" style="grid-column:1/-1"><h3>Key Skills</h3><div class="chips"><i>Python</i><i>Algorithms</i><i>Object-oriented programming</i><i>HTML &amp; CSS</i><i>MySQL</i><i>Tkinter</i><i>Git &amp; GitHub</i><i>Microsoft Office</i><i>Teamwork</i><i>Problem solving</i><i>Adaptability</i><i>Communication</i><i>Time management</i></div></div>
+</div>
+</section>
+
+<section id="cover">
+<h2><span>03.</span> Cover Letter</h2>
+<div class="card">
+<p><b>Dear Hiring Manager,</b></p>
+<p>I am writing to express my interest in the <b>Software Engineer: Intern Opportunities for University Students</b> position at Microsoft, as advertised on Microsoft Careers. I am a Software Development student with a solid foundation in Python, object-oriented programming and databases.</p>
+<p>During my studies, I have developed a restaurant management system in Python and MySQL and two desktop CRUD applications with Tkinter. I have also used Git and GitHub to manage my code in branches and pull requests. My background in object-oriented programming and testing my own code aligns closely with your needs, and I learn new tools quickly.</p>
+<p>I welcome the opportunity to discuss my qualifications in an interview. My resume and portfolio are attached.</p>
+<p><b>Sincerely,<br>Saulo Sebastián Lira Roacho</b></p>
+</div>
+</section>
+
+<section id="resume">
+<h2><span>04.</span> Resume</h2>
+<div class="cv-box">
+<h1>Saulo Sebastián Lira Roacho</h1>
+<div style="color:var(--mute);font-size:15px">Software Development Student · Durango, Durango, Mexico<br>+52 618 567 0010 · <a href="mailto:liraroachosaulosebastian@gmail.com">liraroachosaulosebastian@gmail.com</a></div>
+
+<h2>Professional Summary</h2>
+<p>Software Development student at the Universidad Tecnológica de Durango, interested in programming, web development, databases and emerging technologies. Strong learning ability, logical thinking and team spirit. I am seeking an internship to apply and expand my technical skills through real projects.</p>
+
+<h2>Key Skills</h2>
+<ul>
+<li>Python (console and Tkinter desktop applications)</li>
+<li>Algorithms and computational logic</li>
+<li>Object-oriented programming</li>
+<li>HTML and CSS (basic web development)</li>
+<li>MySQL and SQL (CRUD operations)</li>
+<li>Git and GitHub</li>
+<li>Microsoft Excel, Word and PowerPoint</li>
+<li>Teamwork and effective communication</li>
+<li>Problem solving and adaptability</li>
+<li>Time management and continuous learning</li>
+</ul>
+
+<h2>Projects</h2>
+<div class="row"><b>Restaurant Management System (Python, MySQL)</b><span>May 2026 – Aug 2026</span></div>
+<ul>
+<li>Developed a modular console application for reservations, orders and menu management.</li>
+<li>Implemented client and administrator roles with a password-protected admin menu.</li>
+<li>Connected the system to a MySQL database using parameterized queries.</li>
+<li>Generated table tickets and daily sales reports as CSV files.</li>
+</ul>
+<div class="row"><b>Cars CRUD Desktop App (Python, Tkinter, MySQL)</b><span>Nov 10, 2026 – Nov 12, 2026</span></div>
+<ul>
+<li>Designed an object-oriented model and a graphical interface to insert, view, update and delete records.</li>
+<li>Added search and delete confirmation to prevent data loss.</li>
+<li>Managed three versions with Git branches and pull requests on GitHub.</li>
+</ul>
+<div class="row"><b>School Management System (Python, Tkinter, MySQL)</b><span>Oct 2026 – Nov 2026</span></div>
+<ul>
+<li>Developed a desktop application with full CRUD operations for student records.</li>
+<li>Implemented input validation and a confirmation dialog before deleting data.</li>
+</ul>
+
+<h2>Education</h2>
+<div class="row"><b>B.Eng. in Information Technologies and Digital Innovation</b><span>Aug 2025 – Expected graduation: Apr 2029</span></div>Universidad Tecnológica de Durango
+<div class="row" style="margin-top:10px"><b>Associate Degree (TSU) in Multiplatform Software Development</b><span>Aug 2025 – Expected graduation: Dec 2027</span></div>Universidad Tecnológica de Durango
+<div class="row" style="margin-top:10px"><b>High School Diploma (General)</b><span>Graduated Jul 2025</span></div>CADI Albert Einstein
+
+<h2>Courses &amp; Certifications</h2>
+<ul>
+<li>Introduction to Python, Microsoft Learn | Jan 2026 – Apr 2026</li>
+<li>Web Development Fundamentals, freeCodeCamp | May 2026 – Aug 2026</li>
+<li>Databases for Beginners, Cisco Networking Academy | Sep 2026 – Present</li>
+<li>Introduction to Software Engineering, Google Career Certificates | May 2026 – Aug 2026</li>
+<li>Version Control with Git and GitHub, GitHub Learning Lab | May 2026 – Aug 2026</li>
+<li>Programming Logic and Algorithms, Academic Training | Jan 2026 – Apr 2026</li>
+</ul>
+
+<h2>Languages &amp; Additional Information</h2>
+<ul>
+<li><b>Spanish:</b> Native</li>
+<li>Available for professional internships.</li>
+<li>Committed to continuous learning and motivated to gain experience in the tech industry.</li>
+</ul>
+</div>
+<p class="noprint"><a class="btn" href="javascript:window.print()">Print / Save as PDF</a></p>
+</section>
+
+</main>
+<footer>© 2026 Saulo Sebastián Lira Roacho · Built with HTML &amp; CSS</footer>
+</body>
+</html>
